@@ -1,0 +1,47 @@
+body{
+    font-family: 'Robot', sans-serif;
+}
+
+h1 {
+    font-family: 'Robot', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Robot', sans-serif;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding-left: 10;
+}
+
+li{
+    margin: 0;
+}
+
+h3{
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 20px 0 4px 0px;
+}
+
+input, select {
+    display: block;
+    padding: 4px;
+    widows: 540px;
+}
+
+button{
+    padding: 8px;
+}
+
+textarea{
+    padding: 8px;
+    width: 540px;
+    height: 240px;
+}
