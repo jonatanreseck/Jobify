@@ -1,26 +1,32 @@
         <%- include('header') %>
-        <h2>
-            Nova Vaga:
-            <a href="/admin/vagas">Vagas</a>
-        </h2>
-        <div>
-            <form method="post">
-                <label>Titulo da vaga: </label>
-                <input type="text" name="titulo">
-                <br/>
-                <label>Descrição da vaga: </label>
-                <textarea name="descricao"></textarea>
-                <br/>
-                <label>Categoria: </label>
-                <select name="categoria">
-                    <% categorias.forEach( categoria => { %>
-                    <option value="<%= categoria.id %>"><%= categoria.categoria %></option>
-                    <% }) %>
-                </select>
 
-                <button>Salvar Vaga</button>
+        <div class="lista">    
+            <div class="titulo">
+                <h2>
+                    Nova Vaga:     
+                </h2>
+            </div>
+            <div>
+                <form method="post">
+                    <label>Titulo da vaga: </label>
+                    <input type="text" name="titulo">
+                    <br/>
+                    <label>Descrição da vaga: </label>
+                    <textarea name="descricao"></textarea>
+                    <br/>
+                    <label>Categoria: </label>
+                    <select name="categoria">
+                        <% categorias.forEach( categoria => { %>
+                        <option value="<%= categoria.id %>"><%= categoria.categoria %></option>
+                        <% }) %>
+                    </select>
 
-            </form>           
-        </div>
+                    <br/><br/>
+                    <div>
+                        <button>Salvar Vaga</button>
+                        <a href="/admin/vagas">Voltar</a>
+                    </div>
+                </form>           
+            </div>
 
         <%- include('footer') %>
